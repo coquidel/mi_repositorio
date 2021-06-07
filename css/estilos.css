@@ -1,0 +1,549 @@
+@charset "UTF-8";
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif; }
+
+h2 {
+  color: grey;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem; }
+
+p {
+  color: #3b3b38;
+  font-size: 95%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5; }
+
+h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif; }
+
+footer {
+  color: grey;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+aside {
+  margin-left: 2%;
+  padding: 5%; }
+
+ul {
+  list-style: none; }
+  ul li {
+    padding: 5px;
+    display: inline-block; }
+    ul li a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #444; }
+
+/*grids mobile first*/
+@media only screen and (min-width: 320px) {
+  .containerMobile {
+    display: grid;
+    grid-template-columns: 100px auto 50px;
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "box1 box1 box1" "box2 box2 box2"   "box3 box3 box3"  "box4 box4 box4" "box5 box5 box5"; }
+  .containerMobile .box-1 {
+    grid-area: box1;
+    background-color: white; }
+  .containerMobile .box-2 {
+    grid-area: box2;
+    background-color: #0a0a0a; }
+  .containerMobile .box-3 {
+    grid-area: box3; }
+  .containerMobile .box-4 {
+    grid-area: box4;
+    background-color: #dadad6; }
+  .containerMobile .box-5 {
+    grid-area: box5;
+    background-color: #353434; } }
+
+@media only screen and (min-width: 1024px) {
+  .containerMobile {
+    grid-template-columns: repeat(3, 1fr); }
+  .containerMobile .box-1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / 2; }
+  .containerMobile .box-2 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / 3; }
+  .containerMobile .box-3 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 6; }
+  .containerMobile .box-4 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 6; }
+  .containerMobile .box-5 {
+    grid-column: 1 / span 3;
+    grid-row: 6 / 7; } }
+
+/*Fondos Color*/
+.h1Pages {
+  background-color: #dadad6; }
+
+.fondoNav {
+  background-color: #0a0a0a; }
+
+.fondoFooter {
+  background-color: #353434; }
+
+/*Maps*/
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--whatsapp {
+  background-color: #4ee927; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--instagram {
+  background-color: #C25E30; }
+
+/* Operaciones SCSS */
+.caja-25 {
+  width: 25%; }
+
+.caja-26 {
+  width: 26%; }
+
+.caja-27 {
+  width: 27%; }
+
+.caja-28 {
+  width: 28%; }
+
+.caja-29 {
+  width: 29%; }
+
+.caja-30 {
+  width: 30%; }
+
+.caja-31 {
+  width: 31%; }
+
+.caja-32 {
+  width: 32%; }
+
+.caja-33 {
+  width: 33%; }
+
+.caja-34 {
+  width: 34%; }
+
+.caja-35 {
+  width: 35%; }
+
+.caja-36 {
+  width: 36%; }
+
+.caja-37 {
+  width: 37%; }
+
+.caja-38 {
+  width: 38%; }
+
+.caja-39 {
+  width: 39%; }
+
+.caja-40 {
+  width: 40%; }
+
+.caja-41 {
+  width: 41%; }
+
+.caja-42 {
+  width: 42%; }
+
+.caja-43 {
+  width: 43%; }
+
+.caja-44 {
+  width: 44%; }
+
+.caja-45 {
+  width: 45%; }
+
+.caja-46 {
+  width: 46%; }
+
+.caja-47 {
+  width: 47%; }
+
+.caja-48 {
+  width: 48%; }
+
+.caja-49 {
+  width: 49%; }
+
+.caja-50 {
+  width: 50%; }
+
+.caja-51 {
+  width: 51%; }
+
+.caja-52 {
+  width: 52%; }
+
+.caja-53 {
+  width: 53%; }
+
+.caja-54 {
+  width: 54%; }
+
+.caja-55 {
+  width: 55%; }
+
+.caja-56 {
+  width: 56%; }
+
+.caja-57 {
+  width: 57%; }
+
+.caja-58 {
+  width: 58%; }
+
+.caja-59 {
+  width: 59%; }
+
+.caja-60 {
+  width: 60%; }
+
+.caja-61 {
+  width: 61%; }
+
+.caja-62 {
+  width: 62%; }
+
+.caja-63 {
+  width: 63%; }
+
+.caja-64 {
+  width: 64%; }
+
+.caja-65 {
+  width: 65%; }
+
+.caja-66 {
+  width: 66%; }
+
+.caja-67 {
+  width: 67%; }
+
+.caja-68 {
+  width: 68%; }
+
+.caja-69 {
+  width: 69%; }
+
+.caja-70 {
+  width: 70%; }
+
+.caja-71 {
+  width: 71%; }
+
+.caja-72 {
+  width: 72%; }
+
+.caja-73 {
+  width: 73%; }
+
+.caja-74 {
+  width: 74%; }
+
+.caja-75 {
+  width: 75%; }
+
+.caja-76 {
+  width: 76%; }
+
+.caja-77 {
+  width: 77%; }
+
+.caja-78 {
+  width: 78%; }
+
+.caja-79 {
+  width: 79%; }
+
+.caja-80 {
+  width: 80%; }
+
+.caja-81 {
+  width: 81%; }
+
+.caja-82 {
+  width: 82%; }
+
+.caja-83 {
+  width: 83%; }
+
+.caja-84 {
+  width: 84%; }
+
+.caja-85 {
+  width: 85%; }
+
+.caja-86 {
+  width: 86%; }
+
+.caja-87 {
+  width: 87%; }
+
+.caja-88 {
+  width: 88%; }
+
+.caja-89 {
+  width: 89%; }
+
+.caja-90 {
+  width: 90%; }
+
+.caja-91 {
+  width: 91%; }
+
+.caja-92 {
+  width: 92%; }
+
+.caja-93 {
+  width: 93%; }
+
+.caja-94 {
+  width: 94%; }
+
+.caja-95 {
+  width: 95%; }
+
+.caja-96 {
+  width: 96%; }
+
+.caja-97 {
+  width: 97%; }
+
+.caja-98 {
+  width: 98%; }
+
+.caja-99 {
+  width: 99%; }
+
+.caja-100 {
+  width: 100%; }
+
+.centrar {
+  text-align: center; }
+
+.alinearDerecha {
+  text-align: right; }
+
+.destacadoNegrita {
+  font-weight: bold; }
+
+.tituloObras {
+  color: #353434; }
+
+/* Header*/
+.logo {
+  width: 20%; }
+
+.slogan {
+  font-style: italic;
+  text-transform: unset;
+  letter-spacing: 0.5rem;
+  font-size: 15px;
+  color: #080808;
+  padding-left: 25px; }
+
+/*Barra de Navegación*/
+nav {
+  width: 100%;
+  padding: 10px; }
+
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 1px;
+  text-transform: uppercase; }
+
+.navbar ul {
+  list-style: none;
+  display: inline-block; }
+
+.navbar ul li {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  font-size: 15px; }
+
+.navbar ul li a {
+  display: inline-block;
+  transition: all ease 0.3s; }
+
+.navbar ul li a:hover {
+  background-color: lightsalmon;
+  display: block; }
+
+.navbar ul li.dropdown ul {
+  position: absolute;
+  left: 0;
+  padding-left: 0;
+  min-width: 180px;
+  display: none; }
+
+.navbar ul li.dropdown ul li {
+  width: 180px;
+  margin-left: 5px; }
+
+.navbar ul li.dropdown:hover ul {
+  display: block;
+  background-color: #161616; }
+
+/*Pie de pagina*/
+.flexFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/*Imagenes*/
+#portada {
+  display: flex;
+  height: 100vh;
+  width: 70vw;
+  background-image: url(../images/rosas.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 20px; }
+
+.bordesRedondeados {
+  border-radius: 25%; }
+
+.imagenGrande {
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.imagenChica {
+  width: 40%; }
+
+/*catalogo*/
+.formatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 200px; }
+
+.flexObras {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  Justify-content: center; }
+
+.flexObras .item {
+  display: flex;
+  flex: 1; }
+
+/*BEM*/
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto; }
+
+.tarjeta {
+  background-color: #cccccc;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px; }
+
+.tarjeta__img {
+  width: 300px;
+  height: 180px;
+  margin-right: 30px; }
+
+.tarjeta__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 20px; }
+
+.tarjeta__parrafo {
+  line-height: 28px;
+  font-size: 1rem; }
+
+.boton {
+  height: 60px;
+  padding: 20px;
+  background-color: lightsalmon;
+  color: white;
+  display: inline-block;
+  text-decoration: none; }
+
+.boton--derecha {
+  position: absolute;
+  right: 20px;
+  bottom: -25px; }
+
+.contenedorObras {
+  max-width: 500px;
+  max-height: 500px;
+  width: 50%;
+  margin: 0 auto; }
+
+.tarjeta__imagen {
+  width: 300px;
+  height: 210px;
+  margin-right: 30px; }
+
+#grillaobras {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+  grid-template-rows: auto auto;
+  grid-row-gap: 10px; }
+
+/*info*/
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 3fr 1fr; }
+
+.h2 {
+  letter-spacing: 0.5rem;
+  color: #080808; }
+
+/*Transformaciones*/
+.h3Novedades {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  animation-duration: 3s; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* Operaciones SCSS */
+.box_uno {
+  background-color: lightsalmon;
+  width: 83.33333%;
+  /* Ancho de Cursos*/
+  height: 25%; }
+
+.box_dos {
+  background-color: #dadad6;
+  width: 100%; }
+
+/* Condicionantes SCSS */
+#grad {
+  background-image: linear-gradient(to left, #5a5a5a, #dadad6);
+  /*Gradientes*/ }

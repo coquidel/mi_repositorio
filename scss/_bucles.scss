@@ -1,0 +1,5 @@
+@for $i from 25 through 100 {
+    .caja-#{$i}{
+        width: $i * 1%;
+    }
+}

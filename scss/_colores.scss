@@ -1,0 +1,24 @@
+/*Fondos Color*/
+.h1Pages{
+    background-color: rgb(218, 218, 214);
+  }
+  .fondoNav{
+    background-color: rgb(10, 10, 10);
+  }
+  .fondoFooter{
+    background-color: rgb(53, 52, 52) ;
+  }
+
+
+/*Maps*/
+$redes: ( 
+  whatsapp: #4ee927,
+  facebook:  #3a5795,
+  instagram: #C25E30
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+.btn--#{$red} {
+ background-color: $color;
+}
+}

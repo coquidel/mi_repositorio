@@ -1,0 +1,252 @@
+@import "estructura.scss";
+@import "tipografia.scss";
+@import "colores.scss";
+@import "variables.scss";
+@import "bucles.scss";
+
+
+.centrar{
+    text-align: center;
+}
+.alinearDerecha{
+  text-align: right;
+}
+.destacadoNegrita{
+  font-weight: bold;
+}
+.tituloObras{
+  color:rgb(53, 52, 52);
+}
+/* Header*/
+.logo{
+    width: 20%;
+}
+.slogan
+{
+    font-style: italic;
+    text-transform:unset;
+    letter-spacing: 0.5rem;
+    font-size: 15px;
+    color:rgb(8, 8, 8);
+    padding-left: 25px;
+}
+/*Barra de Navegación*/
+nav{
+    width: 100%;
+    padding: 10px
+    
+}
+a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1px;
+    text-transform:uppercase;
+}
+.navbar ul {
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li {
+    display: inline-block;
+    position:relative;
+    margin-right: 20px;
+    font-size: 15px;
+}
+.navbar ul li a{
+    display: inline-block;
+    transition: all ease 0.3s;
+}
+.navbar ul li a:hover{
+    background-color: lightsalmon;
+    display: block;
+}
+.navbar ul li.dropdown ul{
+    position: absolute;
+    left: 0;
+    padding-left: 0;
+    min-width: 180px;
+    display: none;
+}
+.navbar ul li.dropdown ul li{
+    width: 180px;
+    margin-left: 5px;
+} 
+.navbar ul li.dropdown:hover ul{
+    display: block;
+    background-color: rgb(22, 22, 22);
+}
+/*Pie de pagina*/
+.flexFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+} 
+
+/*Imagenes*/
+#portada {
+    display: flex;
+    height: 100vh;
+    width: 70vw;
+    background-image: url(../images/rosas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: stretch ;
+    padding-top: 20px;
+}
+
+.bordesRedondeados{
+    border-radius: 25%;
+}
+.imagenGrande {
+    width:85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagenChica{
+    width: 40%;
+}
+/*catalogo*/
+.formatos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 200px;
+}
+.flexObras{
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items:stretch; 
+  Justify-content: center;
+}
+.flexObras .item{
+  display: flex; 
+  flex: 1
+}
+/*BEM*/ 
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.tarjeta {
+	background-color: #cccccc;
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 50px; 
+}
+
+.tarjeta__img {
+	width: 300px;
+	height: 180px;
+	margin-right: 30px;
+}
+
+.tarjeta__titulo {
+	font-size:1.5rem;
+	margin-bottom: 20px;
+}
+
+.tarjeta__parrafo {
+	line-height: 28px;
+	font-size:1rem;
+}
+
+.boton{
+	height: 60px;
+	padding: 20px;
+	background-color: lightsalmon;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.boton--derecha {
+	position: absolute;
+	right: 20px;
+	bottom: -25px;
+}
+.contenedorObras {
+	max-width: 500px;
+    max-height: 500px;
+	width: 50%;
+	margin: 0 auto;
+}
+.tarjeta__imagen {
+	width: 300px;
+	height: 210px;
+	margin-right: 30px;
+}
+#grillaobras {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
+}
+
+/*info*/
+.grid {
+  display: grid; 
+  grid-template-columns: 2fr 1fr; 
+  grid-template-rows: 3fr 1fr;
+}
+.h2{
+  letter-spacing: 0.5rem;
+  color:rgb(8, 8, 8);
+}
+
+
+/*Transformaciones*/ 
+
+.h3Novedades {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce;
+  animation-duration: 3s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Operaciones SCSS */
+$ancho: 100%;
+$alto: 100%;
+$salmon:lightsalmon;
+$gris: rgb(218, 218, 214);
+
+.box_uno {
+    background-color: $salmon;
+    width: ($ancho/3)+50; /* Ancho de Cursos*/
+    height: ($alto/4);
+}
+.box_dos {
+    background-color: $gris;
+    width: ($ancho);
+}
+/* Condicionantes SCSS */
+$fondo: degradado;
+
+#grad{
+  @if $fondo == degradado {
+  background-image: linear-gradient(to left,rgb(90, 90, 90),rgb(218, 218, 214) ) ; /*Gradientes*/
+  }
+  @else if $fondo == blanco {
+  background-color:rgb(255, 255, 255)
+  }
+}
